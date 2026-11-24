@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ klist
+Ticket cache: FILE:/tmp/krb5cc_1000
+Default principal: administrator@SABERMAIS.LAN
+
+Valid starting       Expires              Service principal
+12/11/2026 17:52:51  13/11/2026 03:52:51  krbtgt/SABERMAIS.LAN@SABERMAIS.LAN
+        renew until 13/11/2026 17:52:51
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

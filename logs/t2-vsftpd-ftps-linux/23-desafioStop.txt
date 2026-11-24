@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo systemctl stop vsftpd; systemctl is-active vsftpd; timeout 10 lftp -u ftp.professores,
+x -e "set net:max-retries 1; ls; bye" localhost; sudo ss -tlnp | grep ':21 ' || echo "porta 21 fechada"; sudo journa
+lctl -u vsftpd --no-pager -n 3
+inactive
+ls: Fatal error: max-retries exceeded (Connection refused)
+porta 21 fechada
+nov 24 11:11:44 lnx06-eduardo systemd[1]: Stopping vsftpd.service - vsftpd FTP server...
+nov 24 11:11:44 lnx06-eduardo systemd[1]: vsftpd.service: Deactivated successfully.
+nov 24 11:11:44 lnx06-eduardo systemd[1]: Stopped vsftpd.service - vsftpd FTP server.
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

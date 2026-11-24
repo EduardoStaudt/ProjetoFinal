@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ getent group "SABERMAIS\domain users"; getfacl -p /srv/samba/Publica
+SABERMAIS\domain users:x:100:
+# file: /srv/samba/Publica
+# owner: root
+# group: root
+user::rwx
+group::rwx
+group:users:rwx
+group:SABERMAIS\\domain\040admins:rwx
+mask::rwx
+other::---
+default:user::rwx
+default:group::rwx
+default:group:users:rwx
+default:group:SABERMAIS\\domain\040admins:rwx
+default:mask::rwx
+default:other::---
+
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

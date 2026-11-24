@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo journalctl -u samba-ad-dc --since today --no-pager | grep -E "systemd|Starting|ready|S
+tarted|samba version|Auth" | tail -8 | cut -c1-118
+nov 12 17:50:34 lnx06-eduardo systemd[1]: samba-ad-dc.service: Main process exited, code=exited, status=127/n/a
+nov 12 17:50:34 lnx06-eduardo systemd[1]: samba-ad-dc.service: Failed with result 'exit-code'.
+nov 12 17:50:34 lnx06-eduardo systemd[1]: Stopped samba-ad-dc.service - Samba AD Daemon.
+nov 12 17:50:34 lnx06-eduardo systemd[1]: samba-ad-dc.service: Consumed 4.944s CPU time, 338.6M memory peak, 0B memo
+ry
+nov 12 17:50:44 lnx06-eduardo systemd[1]: Starting samba-ad-dc.service - Samba AD Daemon...
+nov 12 17:50:44 lnx06-eduardo samba[3673]:   samba version 4.19.5-Ubuntu started.
+nov 12 17:50:44 lnx06-eduardo samba[3673]:   daemon 'samba' : Starting process...
+nov 12 17:50:45 lnx06-eduardo systemd[1]: Started samba-ad-dc.service - Samba AD Daemon.
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo samba-tool ou list; for o in Professores Secretaria Direcao; do echo "== OU=$o"; sudo
+samba-tool ou listobjects OU=$o; done
+OU=Direcao
+OU=Secretaria
+OU=Professores
+OU=Domain Controllers
+== OU=Professores
+CN=Ana Souza,OU=Professores
+CN=Carlos Lima,OU=Professores
+CN=Professores,OU=Professores
+== OU=Secretaria
+CN=Secretaria,OU=Secretaria
+CN=Diego Alves,OU=Secretaria
+CN=Beatriz Rocha,OU=Secretaria
+== OU=Direcao
+CN=Direcao,OU=Direcao
+CN=Fernanda Costa,OU=Direcao
+CN=Marcos Pereira,OU=Direcao
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo grep -E '^3239[67] .*(chroot|STOR|boletim|Aopa)' /tmp/strace-ftp.txt; sudo ls -l /home
+/ftp.professores/arquivos/boletim.txt; ps -o pid,user,cmd -p 32396,32397 2>/dev/null || echo "(sessao 32396/32397 ja
+ encerrada)"
+32396 11:09:43.977499 chroot(".")       = 0
+32397 11:09:44.053311 chroot(".")       = 0
+32396 11:09:44.069017 write(8, "STOR boletim.txt\r", 17) = 17
+32397 11:09:44.069231 openat(AT_FDCWD, "boletim.txt", O_WRONLY|O_CREAT|O_NONBLOCK, 0666) = 8
+32396 11:09:44.074540 write(8, "Aopa\r\n", 6) = 6
+32397 11:09:44.074574 write(8, "Aopa\r\n", 6) = 6
+-rw-r--r-- 1 ftp.professores ftp.professores 6 nov 24 11:09 /home/ftp.professores/arquivos/boletim.txt
+    PID USER     CMD
+  32396 nobody   /usr/sbin/vsftpd /etc/vsftpd.conf
+  32397 ftp.pro+ /usr/sbin/vsftpd /etc/vsftpd.conf
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

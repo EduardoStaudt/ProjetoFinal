@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ KRB5CCNAME=/tmp/krb5cc_ana smbclient //lnx06-eduardo.sabermais.lan/Professores --use-kerber
+os=required -c 'put /etc/hostname teste-ana.txt; ls' < /dev/null 2>&1
+Password for [ana.souza@SABERMAIS.LAN]:putting file /etc/hostname as \teste-ana.txt (2,3 kb/s) (average 2,3 kb/s)
+  .                                   D        0  Thu Nov 12 18:05:45 2026
+  ..                                  D        0  Thu Nov 12 18:05:45 2026
+  teste-ana.txt                       A       14  Thu Nov 12 18:05:45 2026
+
+                11758760 blocks of size 1024. 4486424 blocks available
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

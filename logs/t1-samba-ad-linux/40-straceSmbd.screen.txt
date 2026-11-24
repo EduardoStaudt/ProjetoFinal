@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo timeout 20 strace -f -o /tmp/strace-smbd.txt -p $(pgrep -xo smbd) -e trace=openat,read
+,write,pread64,fstat,getdents64,newfstatat; grep -E "teste-ana|pread64" /tmp/strace-smbd.txt | cut -c1-118 | tail -1
+6
+strace: Process 3679 attached
+strace: Process 16838 attached
+strace: Process 16839 attached
+strace: Process 3679 detached
+16838 pread64(6, "10850450072432703957\n", 24, 0) = 21
+16838 pread64(6, "10850450072432703957\n", 24, 0) = 21
+16838 openat(38, "teste-ana.txt", O_RDONLY|O_NOFOLLOW|O_PATH) = 44
+16839 pread64(46, "lnx06-eduardo\n", 14, 0) = 14
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

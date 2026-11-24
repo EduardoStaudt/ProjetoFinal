@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo cat /root/resolv.ok; echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf
+nameserver 127.0.0.1
+search sabermais.lan
+nameserver 8.8.8.8
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

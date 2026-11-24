@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ smbclient -L localhost -N 2>&1 | head -12; sudo samba-tool domain level show
+Anonymous login successful
+
+        Sharename       Type      Comment
+        ---------       ----      -------
+        sysvol          Disk
+        netlogon        Disk
+        IPC$            IPC       IPC Service (Samba 4.19.5-Ubuntu)
+SMB1 disabled -- no workgroup available
+Domain and forest function level for domain 'DC=sabermais,DC=lan'
+
+Forest function level: (Windows) 2008 R2
+Domain function level: (Windows) 2008 R2
+Lowest function level of a DC: (Windows) 2008 R2
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

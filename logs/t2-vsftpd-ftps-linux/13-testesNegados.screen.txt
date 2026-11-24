@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ for t in "anonymous,x|set ssl:verify-certificate no" "anonymous,x|set ftp:ssl-allow false"
+"ftp.professores,x|set ftp:ssl-allow false" "eduardo,x|set ssl:verify-certificate no"; do echo "== ${t%%|*}  (${t#*|
+})"; lftp -u "${t%%|*}" -e "set net:max-retries 1; ${t#*|}; ls; bye" localhost; done
+== anonymous,x  (set ssl:verify-certificate no)
+ls: Login failed: 530 Anonymous sessions may not use encryption.
+== anonymous,x  (set ftp:ssl-allow false)
+ls: Login failed: 530 Permission denied.
+== ftp.professores,x  (set ftp:ssl-allow false)
+ls: Login failed: 530 Non-anonymous sessions must use encryption.
+== eduardo,x  (set ssl:verify-certificate no)
+ls: Login failed: 530 Permission denied.
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

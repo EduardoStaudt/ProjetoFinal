@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo samba-tool user show paula.mendes --attributes=userPrincipalName,whenCreated,memberOf;
+ sudo samba-tool group listmembers Professores
+dn: CN=Paula Mendes,OU=Professores,DC=sabermais,DC=lan
+whenCreated: 20261113013019.0Z
+userPrincipalName: paula.mendes@sabermais.lan
+memberOf: CN=Professores,OU=Professores,DC=sabermais,DC=lan
+
+carlos.lima
+ana.souza
+paula.mendes
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

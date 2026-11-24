@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo smbstatus -b | tail -3 | cut -c1-110; sudo smbstatus -S | tail -2; sudo ls -l /srv/sam
+ba/Professores
+PID     Username     Group        Machine                                   Protocol Version  Encryption
+--------------------------------------------------------------------------------------------------------------
+12842   SABERMAIS\ana.souza users        192.168.106.50 (ipv4:192.168.106.50:58270) SMB3_11           -
+Professores  12842   192.168.106.50 qui nov 12 19:37:54 2026 -03     -            AES-128-CMAC
+
+total 12
+-rwxrwx---+ 1 SABERMAIS\ana.souza users  0 nov 12 19:39 ana-pelo-windows.txt
+-rwxrwx---+ 1 SABERMAIS\ana.souza users 14 nov 12 18:05 teste-ana.txt
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

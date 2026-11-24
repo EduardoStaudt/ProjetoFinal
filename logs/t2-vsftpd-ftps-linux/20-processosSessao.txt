@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ systemctl status vsftpd --no-pager | head -3; sudo pstree -apu $(systemctl show -p MainPID
+--value vsftpd); ps -o pid,ppid,user,cmd -C vsftpd; sudo ss -tnp | grep vsftpd
+● vsftpd.service - vsftpd FTP server
+     Loaded: loaded (/usr/lib/systemd/system/vsftpd.service; enabled; preset: enabled)
+     Active: active (running) since Mon 2026-11-23 18:32:40 -03; 27min ago
+vsftpd,8025 /etc/vsftpd.conf
+  └─vsftpd,9544,nobody /etc/vsftpd.conf
+      ├─vsftpd,9546,ftp.professores /etc/vsftpd.conf
+      └─vsftpd,9545 /etc/vsftpd.conf
+    PID    PPID USER     CMD
+   8025       1 root     /usr/sbin/vsftpd /etc/vsftpd.conf
+   9544    8025 nobody   /usr/sbin/vsftpd /etc/vsftpd.conf
+   9545    9544 nobody   /usr/sbin/vsftpd /etc/vsftpd.conf
+   9546    9544 ftp.pro+ /usr/sbin/vsftpd /etc/vsftpd.conf
+ESTAB 0      0      192.168.106.20:21   192.168.106.50:49247 users:(("vsftpd",pid=9546,fd=2),("vsftpd",pid=9546,fd=1
+),("vsftpd",pid=9546,fd=0),("vsftpd",pid=9545,fd=2),("vsftpd",pid=9545,fd=1),("vsftpd",pid=9545,fd=0),("vsftpd",pid=
+9544,fd=2),("vsftpd",pid=9544,fd=1),("vsftpd",pid=9544,fd=0))
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

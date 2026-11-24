@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ hostname -f ; ip -br a ; date ; cat ~/AUTORIA.txt ; systemctl is-active vsftpd samba-ad-dc
+lnx06-eduardo.sabermais.lan
+lo               UNKNOWN        127.0.0.1/8 ::1/128
+enp0s3           UP             192.168.106.20/24 fe80::a00:27ff:fe9c:f0cc/64
+ter 24 nov 2026 11:13:44 -03
+Eduardo Andrei Staudt - nº 6 - T4 vsftpd FTPS - 2026-11-23
+active
+active
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

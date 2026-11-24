@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo ufw status numbered
+Status: active
+
+     To                         Action      From
+     --                         ------      ----
+[ 1] 22/tcp                     ALLOW IN    Anywhere
+[ 2] 21/tcp                     ALLOW IN    Anywhere
+[ 3] 40000:40100/tcp            ALLOW IN    Anywhere
+[ 4] 53,88,135,139,389,445,464,636,3268,3269/tcp ALLOW IN    Anywhere
+[ 5] 53,88,123,137,138,389,464/udp ALLOW IN    Anywhere
+[ 6] 49152:65535/tcp            ALLOW IN    Anywhere
+[ 7] 22/tcp (v6)                ALLOW IN    Anywhere (v6)
+[ 8] 21/tcp (v6)                ALLOW IN    Anywhere (v6)
+[ 9] 40000:40100/tcp (v6)       ALLOW IN    Anywhere (v6)
+[10] 53,88,135,139,389,445,464,636,3268,3269/tcp (v6) ALLOW IN    Anywhere (v6)
+[11] 53,88,123,137,138,389,464/udp (v6) ALLOW IN    Anywhere (v6)
+[12] 49152:65535/tcp (v6)       ALLOW IN    Anywhere (v6)
+
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

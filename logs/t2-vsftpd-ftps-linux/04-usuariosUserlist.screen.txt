@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ cat /etc/vsftpd.userlist; id ftp.professores; id ftp.secretaria; sudo ls -ld /home/ftp.prof
+essores /home/ftp.secretaria /home/ftp.professores/arquivos /home/ftp.secretaria/arquivos; sudo passwd -S ftp.profes
+sores; sudo passwd -S ftp.secretaria
+ftp.professores
+ftp.secretaria
+uid=1026(ftp.professores) gid=1026(ftp.professores) groups=1026(ftp.professores),100(users)
+uid=1027(ftp.secretaria) gid=1027(ftp.secretaria) groups=1027(ftp.secretaria),100(users)
+drwxr-x--- 3 ftp.professores ftp.professores 4096 nov 23 17:15 /home/ftp.professores
+drwxr-xr-x 2 ftp.professores ftp.professores 4096 nov 23 17:15 /home/ftp.professores/arquivos
+drwxr-x--- 3 ftp.secretaria  ftp.secretaria  4096 nov 23 17:15 /home/ftp.secretaria
+drwxr-xr-x 2 ftp.secretaria  ftp.secretaria  4096 nov 23 17:15 /home/ftp.secretaria/arquivos
+ftp.professores P 2026-11-23 0 99999 7 -1
+ftp.secretaria P 2026-11-23 0 99999 7 -1
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

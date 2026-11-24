@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ klist | sed -n 2p; smbclient -L lnx06-eduardo.sabermais.lan --use-kerberos=required < /dev/
+null 2>&1 | head -12
+Default principal: administrator@SABERMAIS.LAN
+Password for [administrator@SABERMAIS.LAN]:
+        Sharename       Type      Comment
+        ---------       ----      -------
+        sysvol          Disk
+        netlogon        Disk
+        Professores     Disk
+        Secretaria      Disk
+        Direcao         Disk
+        Publica         Disk
+        IPC$            IPC       IPC Service (Samba 4.19.5-Ubuntu)
+SMB1 disabled -- no workgroup available
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

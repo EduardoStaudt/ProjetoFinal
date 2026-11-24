@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ grep "log level" /etc/samba/smb.conf; sudo testparm -s 2>&1 | grep -E "Loaded services|^\[|
+path"
+        log level = 1 auth_audit:3
+Loaded services file OK.
+[global]
+[sysvol]
+        path = /var/lib/samba/sysvol
+[netlogon]
+        path = /var/lib/samba/sysvol/sabermais.lan/scripts
+[Professores]
+        path = /srv/samba/Professores
+[Secretaria]
+        path = /srv/samba/Secretaria
+[Direcao]
+        path = /srv/samba/Direcao
+[Publica]
+        path = /srv/samba/Publica
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

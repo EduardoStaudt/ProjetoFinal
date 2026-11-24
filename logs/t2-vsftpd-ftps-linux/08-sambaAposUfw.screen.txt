@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ host lnx06-eduardo.sabermais.lan 192.168.106.20; smbclient -L //lnx06-eduardo.sabermais.lan
+ -N 2>&1 | head -12; sudo ss -tlnp | grep -E ":(21|88|445|389) " | cut -c1-110
+Using domain server:
+Name: 192.168.106.20
+Address: 192.168.106.20#53
+Aliases:
+
+lnx06-eduardo.sabermais.lan has address 192.168.106.20
+Anonymous login successful
+
+        Sharename       Type      Comment
+        ---------       ----      -------
+        sysvol          Disk
+        netlogon        Disk
+        Professores     Disk
+        Secretaria      Disk
+        Direcao         Disk
+        Publica         Disk
+        IPC$            IPC       IPC Service (Samba 4.19.5-Ubuntu)
+SMB1 disabled -- no workgroup available
+LISTEN 0      32           0.0.0.0:21         0.0.0.0:*    users:(("vsftpd",pid=5552,fd=3))
+LISTEN 0      10           0.0.0.0:88         0.0.0.0:*    users:(("kdc(3",pid=2498,fd=39),("kdc(2",pid=2495,f
+LISTEN 0      50           0.0.0.0:445        0.0.0.0:*    users:(("smbd",pid=2448,fd=39))
+LISTEN 0      10           0.0.0.0:389        0.0.0.0:*    users:(("ldap(3",pid=2564,fd=35),("ldap(2",pid=2560
+LISTEN 0      10              [::]:88            [::]:*    users:(("kdc(3",pid=2498,fd=34),("kdc(2",pid=2495,f
+LISTEN 0      50              [::]:445           [::]:*    users:(("smbd",pid=2448,fd=37))
+LISTEN 0      10              [::]:389           [::]:*    users:(("ldap(3",pid=2564,fd=30),("ldap(2",pid=2560
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+

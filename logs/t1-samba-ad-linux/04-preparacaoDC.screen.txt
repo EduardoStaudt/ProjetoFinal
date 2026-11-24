@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ systemctl is-active smbd nmbd winbind systemd-resolved; systemctl is-enabled samba-ad-dc; l
+s /etc/samba/; cat /etc/resolv.conf
+inactive
+inactive
+inactive
+inactive
+enabled
+gdbcommands  smb.conf.bak  smb.conf.bkp  tls
+nameserver 127.0.0.1
+search sabermais.lan
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

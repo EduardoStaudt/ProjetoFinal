@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ ps -eo pid,ppid,nlwp,comm | awk "NR==1 || /samba|smbd|ldap|kdc|dns|rpc|winbind|nbt|cldap/"
+| head -30
+    PID    PPID NLWP COMMAND
+   3673       1    1 samba
+   3678    3676    1 rpc[master]
+   3679    3677    1 smbd
+   3681    3680    1 nbt[master]
+   3684    3682    1 rpc(0)
+   3688    3686    1 rpc(1)
+   3689    3687    1 ldap[master]
+   3692    3690    1 cldap[master]
+   3693    3691    1 rpc(2)
+   3696    3694    1 kdc[master]
+   3697    3695    1 rpc(3)
+   3701    3700    1 kdc(0)
+   3704    3702    1 winbindd[master
+   3708    3706    1 winbindd
+   3709    3703    1 kdc(1)
+   3714    3712    1 kdc(2)
+   3717    3713    1 dnsupdate[maste
+   3718    3716    1 kdc(3)
+   3720    3719    1 dns[master]
+   3727    3679    1 smbd-notifyd
+   3728    3679    1 smbd-cleanupd
+   3732    3731    1 ldap(0)
+   3734    3733    1 ldap(1)
+   3736    3735    1 ldap(2)
+   3738    3737    1 ldap(3)
+  12832    3679    1 smbd-scavenger
+  12842    3679    1 smbd[192.168.10
+eduardo@lnx06-eduardo:~$
+
+
+
+

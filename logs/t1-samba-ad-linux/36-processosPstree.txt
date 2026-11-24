@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ pstree -ap $(systemctl show -p MainPID --value samba-ad-dc) | cut -c1-100 | head -31
+samba,3673
+  |-tfork(3675),3674
+  |   `-s3fs[master],3675
+  |       `-tfork(3679),3677
+  |           `-smbd,3679 -D --option=server role check:inhibit=yes --foreground
+  |               |-smbd-cleanupd,3728
+  |               |-smbd-notifyd,3727 .
+  |               |-smbd-scavenger,12832
+  |               `-smbd[192.168.10,12842
+  |-tfork(3678),3676
+  |   `-rpc[master],3678
+  |       |-tfork(3684),3682
+  |       |   `-rpc(0),3684
+  |       |-tfork(3688),3686
+  |       |   `-rpc(1),3688
+  |       |-tfork(3693),3691
+  |       |   `-rpc(2),3693
+  |       `-tfork(3697),3695
+  |           `-rpc(3),3697
+  |-tfork(3681),3680
+  |   `-nbt[master],3681
+  |-tfork(3685),3683
+  |   `-wrepl[master],3685
+  |-tfork(3689),3687
+  |   `-ldap[master],3689
+  |       |-tfork(3732),3731
+  |       |   `-ldap(0),3732
+  |       |-tfork(3734),3733
+  |       |   `-ldap(1),3734
+  |       |-tfork(3736),3735
+  |       |   `-ldap(2),3736
+eduardo@lnx06-eduardo:~$
+
+

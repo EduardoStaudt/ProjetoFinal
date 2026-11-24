@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo grep -E '"USER |530|OK LOGIN|OK UPLOAD' /var/log/vsftpd.log | tail -16 | sed -E 's/^[A
+-Za-z]+ [A-Za-z]+ +[0-9]+ ([0-9:]+) [0-9]+ /\1 /; s/Client "127.0.0.1", //'; sudo journalctl -u vsftpd --no-pager |
+grep pam_winbind | tail -1 | cut -c1-230
+18:33:34 [pid 8306] [ftp.professores] OK LOGIN: Client "127.0.0.1"
+18:33:34 [pid 8308] [ftp.professores] OK UPLOAD: "/teste.txt", 14 bytes, 3.20Kbyte/sec
+18:34:11 [pid 8532] FTP command: "USER anonymous"
+18:34:11 [pid 8532] [anonymous] FTP response: "530 Anonymous sessions may not use encryption."
+18:34:11 [pid 8536] FTP command: "USER ftp.professores"
+18:34:11 [pid 8536] [ftp.professores] FTP response: "530 Non-anonymous sessions must use encryption."
+18:34:11 [pid 8540] FTP command: "USER eduardo"
+18:34:12 [pid 8540] [eduardo] FTP response: "530 Permission denied."
+18:34:34 [pid 8704] FTP command: "USER anonymous"
+18:34:34 [pid 8704] [anonymous] FTP response: "530 Anonymous sessions may not use encryption."
+18:34:34 [pid 8708] FTP command: "USER anonymous"
+18:34:35 [pid 8708] [anonymous] FTP response: "530 Permission denied."
+18:34:35 [pid 8712] FTP command: "USER ftp.professores"
+18:34:35 [pid 8712] [ftp.professores] FTP response: "530 Non-anonymous sessions must use encryption."
+18:34:35 [pid 8716] FTP command: "USER eduardo"
+18:34:36 [pid 8716] [eduardo] FTP response: "530 Permission denied."
+nov 23 18:33:34 lnx06-eduardo vsftpd[8306]: pam_winbind(vsftpd:auth): request wbcLogonUser failed: WBC_ERR_AUTH_ERRO
+R, PAM error: PAM_USER_UNKNOWN (10), NTSTATUS: NT_STATUS_NO_SUCH_USER, Error message was: The specified account do
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+

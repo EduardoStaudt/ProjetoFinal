@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ grep ^ssl_tls /etc/vsftpd.conf | paste -sd" "; for v in tls1 tls1_1 tls1_2 tls1_3; do echo
+"== openssl s_client -starttls ftp -$v"; openssl s_client -connect localhost:21 -starttls ftp -$v -cipher "DEFAULT:@
+SECLEVEL=0" </dev/null 2>&1 | grep -oE "tlsv1 alert protocol version|New, .*Cipher is .*"; done
+ssl_tlsv1=NO ssl_tlsv11=NO ssl_tlsv12=YES ssl_tlsv13=YES
+== openssl s_client -starttls ftp -tls1
+tlsv1 alert protocol version
+New, (NONE), Cipher is (NONE)
+== openssl s_client -starttls ftp -tls1_1
+tlsv1 alert protocol version
+New, (NONE), Cipher is (NONE)
+== openssl s_client -starttls ftp -tls1_2
+New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+== openssl s_client -starttls ftp -tls1_3
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

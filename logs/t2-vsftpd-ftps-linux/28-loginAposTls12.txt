@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ systemctl is-active vsftpd samba-ad-dc; lftp -u ftp.professores -e "set ftp:ssl-force true;
+ set ssl:verify-certificate no; put /etc/hostname -o teste-tls.txt; ls; rm teste-tls.txt; bye" localhost
+active
+active
+Password:
+14 bytes transferred
+drwxr-xr-x    2 1026     1026         4096 Nov 24 11:16 arquivos
+-rw-r--r--    1 1026     1026           14 Nov 24 11:26 teste-tls.txt
+rm ok, `teste-tls.txt' removed
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

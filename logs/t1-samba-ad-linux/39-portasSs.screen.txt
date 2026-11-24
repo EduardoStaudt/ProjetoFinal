@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo ss -tulpn | grep "0.0.0.0:" | grep -E ":(53|88|135|389|445|464|636|3268|3269) " | awk
+"{print \$1, \$5, \$7}" | cut -c1-62 | sort -t: -k2 -n
+tcp 0.0.0.0:53 users:(("dns[master]",pid=3720,fd=49))
+udp 0.0.0.0:53 users:(("dns[master]",pid=3720,fd=50))
+tcp 0.0.0.0:88 users:(("kdc(3",pid=3718,fd=39),("kdc(2",pid=37
+udp 0.0.0.0:88 users:(("kdc(3",pid=3718,fd=40),("kdc(2",pid=37
+udp 192.168.106.20:88 users:(("kdc(3",pid=3718,fd=43),("kdc(2"
+tcp 0.0.0.0:135 users:(("rpc(0",pid=3684,fd=33))
+tcp 0.0.0.0:389 users:(("ldap(3",pid=3738,fd=35),("ldap(2",pid
+udp 0.0.0.0:389 users:(("cldap[master]",pid=3692,fd=32))
+udp 192.168.106.20:389 users:(("cldap[master]",pid=3692,fd=34)
+tcp 0.0.0.0:445 users:(("smbd-scavenger",pid=12832,fd=40),("sm
+tcp 0.0.0.0:464 users:(("kdc(3",pid=3718,fd=41),("kdc(2",pid=3
+udp 0.0.0.0:464 users:(("kdc(3",pid=3718,fd=42),("kdc(2",pid=3
+udp 192.168.106.20:464 users:(("kdc(3",pid=3718,fd=44),("kdc(2
+tcp 0.0.0.0:636 users:(("ldap(3",pid=3738,fd=36),("ldap(2",pid
+tcp 0.0.0.0:3268 users:(("ldap(3",pid=3738,fd=37),("ldap(2",pi
+tcp 0.0.0.0:3269 users:(("ldap(3",pid=3738,fd=38),("ldap(2",pi
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

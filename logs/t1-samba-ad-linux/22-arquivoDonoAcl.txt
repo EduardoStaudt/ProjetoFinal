@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo ls -l /srv/samba/Professores; sudo getfacl -p /srv/samba/Professores/teste-ana.txt
+total 8
+-rwxrwx---+ 1 SABERMAIS\ana.souza users 14 nov 12 18:05 teste-ana.txt
+# file: /srv/samba/Professores/teste-ana.txt
+# owner: SABERMAIS\\ana.souza
+# group: users
+user::rwx
+user:SABERMAIS\\domain\040admins:rwx
+user:SABERMAIS\\professores:rwx
+group::rwx
+group:users:rwx
+group:SABERMAIS\\domain\040admins:rwx
+group:SABERMAIS\\professores:rwx
+group:SABERMAIS\\ana.souza:rwx
+mask::rwx
+other::---
+
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

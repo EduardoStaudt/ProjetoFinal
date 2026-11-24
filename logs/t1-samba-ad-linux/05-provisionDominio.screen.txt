@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ grep -oE '(Server Role|Hostname|NetBIOS Domain|DNS Domain|DOMAIN SID): .*' ~/provision.log;
+ systemctl status samba-ad-dc --no-pager | head -9 | cut -c1-110
+Server Role:           active directory domain controller
+Hostname:              lnx06-eduardo
+NetBIOS Domain:        SABERMAIS
+DNS Domain:            sabermais.lan
+DOMAIN SID:            S-1-5-21-809444415-3593668215-1863937361
+● samba-ad-dc.service - Samba AD Daemon
+     Loaded: loaded (/usr/lib/systemd/system/samba-ad-dc.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2026-11-12 17:50:45 -03; 14s ago
+       Docs: man:samba(8)
+             man:samba(7)
+             man:smb.conf(5)
+    Process: 3670 ExecCondition=/usr/share/samba/is-configured samba (code=exited, status=0/SUCCESS)
+   Main PID: 3673 (samba)
+     Status: "samba: ready to serve connections..."
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

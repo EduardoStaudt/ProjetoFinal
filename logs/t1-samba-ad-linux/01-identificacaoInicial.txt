@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ hostname -f; ip -br a; date; head -3 /etc/os-release; grep -v ^# /etc/hosts | grep . ; cat
+~/AUTORIA.txt
+lnx06-eduardo.sabermais.lan
+lo               UNKNOWN        127.0.0.1/8 ::1/128
+enp0s3           UP             192.168.106.20/24 fe80::a00:27ff:fe9c:f0cc/64
+qui 12 nov 2026 17:37:32 -03
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+127.0.0.1 localhost
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+192.168.106.20  lnx06-eduardo.sabermais.lan lnx06-eduardo
+Eduardo Andrei Staudt - nº 6 - T3 Samba AD - 2026-11-12
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

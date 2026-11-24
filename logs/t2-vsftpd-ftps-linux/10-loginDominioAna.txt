@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ lftp -u 'SABERMAIS\ana.souza' -e "set ftp:ssl-force true; set ssl:verify-certificate no; pw
+d; put /etc/hostname -o ana-teste.txt; ls; bye" localhost
+Password:
+ftp://SABERMAIS%5Cana.souza@localhost
+14 bytes transferred                       .]
+-rw-r--r--    1 3000015  100            14 Nov 23 20:55 ana-teste.txt
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

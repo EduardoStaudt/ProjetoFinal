@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo samba-tool group listmembers 'Domain Admins'; sudo samba-tool user show eduardo.admin
+--attributes=memberOf
+eduardo.admin
+Administrator
+dn: CN=Eduardo Admin,CN=Users,DC=sabermais,DC=lan
+memberOf: CN=Domain Admins,CN=Users,DC=sabermais,DC=lan
+
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

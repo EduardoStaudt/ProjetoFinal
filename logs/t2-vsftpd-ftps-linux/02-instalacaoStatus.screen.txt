@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ systemctl status vsftpd --no-pager ; vsftpd -v 2>&1 || true
+● vsftpd.service - vsftpd FTP server
+     Loaded: loaded (/usr/lib/systemd/system/vsftpd.service; enabled; preset: enabled)
+     Active: active (running) since Mon 2026-11-23 17:10:26 -03; 3s ago
+    Process: 3329 ExecStartPre=/bin/mkdir -p /var/run/vsftpd/empty (code=exited, status=0/SUCCESS)
+   Main PID: 3331 (vsftpd)
+      Tasks: 1 (limit: 2263)
+     Memory: 704.0K (peak: 856.0K)
+        CPU: 8ms
+     CGroup: /system.slice/vsftpd.service
+             └─3331 /usr/sbin/vsftpd /etc/vsftpd.conf
+
+nov 23 17:10:26 lnx06-eduardo systemd[1]: Starting vsftpd.service - vsftpd FTP server...
+nov 23 17:10:26 lnx06-eduardo systemd[1]: Started vsftpd.service - vsftpd FTP server.
+vsftpd: version 3.0.5
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ for p in $(pgrep -x vsftpd); do printf "PID %-6s %-16s Uid=%-6s CapEff=%s  root=%s\n" $p "$
+(ps -o user= -p $p)" "$(sudo awk '/^Uid/{print $2}' /proc/$p/status)" "$(sudo awk '/^CapEff/{print $2}' /proc/$p/sta
+tus)" "$(sudo readlink /proc/$p/root)"; done
+PID 8025   root             Uid=0      CapEff=000001ffffffffff  root=/
+PID 9544   nobody           Uid=65534  CapEff=0000000000000000  root=/run/vsftpd/empty
+PID 9545   nobody           Uid=65534  CapEff=0000000000000000  root=/run/vsftpd/empty
+PID 9546   ftp.professores  Uid=1026   CapEff=0000000000000000  root=/home/ftp.professores
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

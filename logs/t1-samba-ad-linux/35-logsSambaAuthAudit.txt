@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ ls /var/log/samba/; for s in WRONG_PASSWORD OK; do sudo grep "Auth:" /var/log/samba/log.sam
+ba | grep ana.souza | grep "192.168.106.50" | grep "NT_STATUS_$s" | tail -1 | cut -c1-360; done
+cores              log.rpcd_fsrvp   log.rpcd_spoolss  log.samba-dcerpcd  log.wb-SABERMAIS
+log.rpcd_classic   log.rpcd_lsad    log.rpcd_winreg   log.smbd           log.winbindd
+log.rpcd_epmapper  log.rpcd_mdssvc  log.samba         log.wb-BUILTIN     log.winbindd-idmap
+  Auth: [Kerberos KDC,ENC-TS Pre-authentication] user [(null)]\[ana.souza\\@sabermais.lan@SABERMAIS.LAN] at [Thu, 12
+ Nov 2026 19:01:49.774436 -03] with [aes256-cts-hmac-sha1-96] status [NT_STATUS_WRONG_PASSWORD] workstation [(null)]
+ remote host [ipv4:192.168.106.50:49730] mapped to [SABERMAIS]\[ana.souza]. local host [NULL]
+  Auth: [Kerberos KDC,ENC-TS Pre-authentication] user [(null)]\[ana.souza\\@sabermais.lan@SABERMAIS.LAN] at [Thu, 12
+ Nov 2026 19:35:03.670414 -03] with [aes256-cts-hmac-sha1-96] status [NT_STATUS_OK] workstation [(null)] remote host
+ [ipv4:192.168.106.50:58183] became [SABERMAIS]\[ana.souza] [S-1-5-21-809444415-3593668215-1863937361-1107]. local h
+ost [NULL]
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

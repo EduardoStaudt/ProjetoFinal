@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo systemctl start vsftpd; systemctl status vsftpd --no-pager | head -3; sudo ss -tlnp |
+grep ':21 '; sudo journalctl -u vsftpd --no-pager -n 3
+● vsftpd.service - vsftpd FTP server
+     Loaded: loaded (/usr/lib/systemd/system/vsftpd.service; enabled; preset: enabled)
+     Active: active (running) since Tue 2026-11-24 11:12:06 -03; 20ms ago
+LISTEN 0      32           0.0.0.0:21         0.0.0.0:*    users:(("vsftpd",pid=33235,fd=3))
+
+nov 24 11:11:44 lnx06-eduardo systemd[1]: Stopped vsftpd.service - vsftpd FTP server.
+nov 24 11:12:06 lnx06-eduardo systemd[1]: Starting vsftpd.service - vsftpd FTP server...
+nov 24 11:12:06 lnx06-eduardo systemd[1]: Started vsftpd.service - vsftpd FTP server.
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

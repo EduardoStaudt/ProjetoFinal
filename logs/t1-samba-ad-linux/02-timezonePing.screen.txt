@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ timedatectl | head -4; ping -c2 8.8.8.8
+               Local time: qui 2026-11-12 17:37:57 -03
+           Universal time: qui 2026-11-12 20:37:57 UTC
+                 RTC time: qui 2026-11-12 20:37:56
+                Time zone: America/Sao_Paulo (-03, -0300)
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=64 time=20.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=64 time=20.1 ms
+
+--- 8.8.8.8 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 20.106/20.112/20.119/0.006 ms
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

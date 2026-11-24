@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ grep -v "^#" /etc/vsftpd.conf | pr -2 -t -w 110
+listen=YES                                             force_local_data_ssl=YES
+listen_ipv6=NO                                         ssl_tlsv1=NO
+anonymous_enable=NO                                    ssl_tlsv11=NO
+local_enable=YES                                       ssl_tlsv12=YES
+write_enable=YES                                       ssl_tlsv13=YES
+local_umask=022                                        ssl_sslv2=NO
+chroot_local_user=YES                                  ssl_sslv3=NO
+allow_writeable_chroot=YES                             require_ssl_reuse=NO
+secure_chroot_dir=/var/run/vsftpd/empty                ssl_ciphers=HIGH
+pam_service_name=vsftpd                                userlist_enable=YES
+pasv_enable=YES                                        userlist_file=/etc/vsftpd.userlist
+pasv_min_port=40000                                    userlist_deny=NO
+pasv_max_port=40100                                    xferlog_enable=YES
+pasv_address=192.168.106.20                            log_ftp_protocol=YES
+ssl_enable=YES                                         vsftpd_log_file=/var/log/vsftpd.log
+rsa_cert_file=/etc/ssl/certs/vsftpd.crt                dual_log_enable=YES
+rsa_private_key_file=/etc/ssl/private/vsftpd.key       use_localtime=YES
+force_local_logins_ssl=YES
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

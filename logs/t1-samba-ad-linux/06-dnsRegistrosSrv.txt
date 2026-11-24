@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ host -t SRV _ldap._tcp.sabermais.lan; host -t SRV _kerberos._udp.sabermais.lan; host -t A l
+nx06-eduardo.sabermais.lan
+_ldap._tcp.sabermais.lan has SRV record 0 100 389 lnx06-eduardo.sabermais.lan.
+_kerberos._udp.sabermais.lan has SRV record 0 100 88 lnx06-eduardo.sabermais.lan.
+lnx06-eduardo.sabermais.lan has address 192.168.106.20
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo grep -E 'AUTH TLS"|234|OK LOGIN|OK UPLOAD' /var/log/vsftpd.log | tail -4 | sed -E 's/^
+[A-Za-z]+ [A-Za-z]+ +[0-9]+ ([0-9:]+) [0-9]+ /\1 /'; sudo ls -l /home/SABERMAIS/ana.souza
+17:55:27 [pid 7323] FTP command: Client "127.0.0.1", "AUTH TLS"
+17:55:27 [pid 7323] FTP response: Client "127.0.0.1", "234 Proceed with negotiation."
+17:55:27 [pid 7322] [SABERMAIS\ana.souza] OK LOGIN: Client "127.0.0.1"
+17:55:27 [pid 7324] [SABERMAIS\ana.souza] OK UPLOAD: Client "127.0.0.1", "/ana-teste.txt", 14 bytes, 2.39Kbyte/sec
+total 4
+-rw-r--r-- 1 SABERMAIS\ana.souza users 14 nov 23 17:55 ana-teste.txt
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

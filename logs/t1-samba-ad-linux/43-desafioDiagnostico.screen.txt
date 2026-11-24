@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ cat /etc/resolv.conf; sudo ss -tulpn | grep ":53 " | head -2 | cut -c1-110
+nameserver 8.8.8.8
+udp   UNCONN 0      0              0.0.0.0:53         0.0.0.0:*    users:(("dns[master]",pid=3720,fd=50))
+udp   UNCONN 0      0                 [::]:53            [::]:*    users:(("dns[master]",pid=3720,fd=48))
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

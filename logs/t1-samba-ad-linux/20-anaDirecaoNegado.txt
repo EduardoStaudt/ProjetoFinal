@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ KRB5CCNAME=/tmp/krb5cc_ana smbclient //lnx06-eduardo.sabermais.lan/Direcao --use-kerberos=r
+equired -c 'ls' < /dev/null 2>&1
+Password for [ana.souza@SABERMAIS.LAN]:NT_STATUS_ACCESS_DENIED listing \*
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

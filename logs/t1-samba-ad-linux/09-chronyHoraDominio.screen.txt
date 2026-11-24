@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ ls -ld /var/lib/samba/ntp_signd; tail -3 /etc/chrony/chrony.conf; chronyc tracking | head -
+6; timedatectl | sed -n '4,6p'
+drwxr-x--- 2 root _chrony 4096 nov 12 17:50 /var/lib/samba/ntp_signd
+bindcmdaddress 192.168.106.20
+allow 192.168.106.0/24
+ntpsigndsocket /var/lib/samba/ntp_signd
+Reference ID    : C8C0E808 (c.ntp.br)
+Stratum         : 3
+Ref time (UTC)  : Thu Nov 12 20:54:18 2026
+System time     : 0.000000130 seconds slow of NTP time
+Last offset     : +0.000176997 seconds
+RMS offset      : 0.000176997 seconds
+                Time zone: America/Sao_Paulo (-03, -0300)
+System clock synchronized: yes
+              NTP service: active
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

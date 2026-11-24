@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo samba-tool computer list; sudo samba-tool computer show PC-PROF01 --attributes=dNSHost
+Name,operatingSystem,whenCreated
+LNX06-EDUARDO$
+PC-PROF01$
+dn: CN=PC-PROF01,CN=Computers,DC=sabermais,DC=lan
+whenCreated: 20261112214645.0Z
+dNSHostName: PC-PROF01.sabermais.lan
+operatingSystem: Windows 10 Pro
+
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

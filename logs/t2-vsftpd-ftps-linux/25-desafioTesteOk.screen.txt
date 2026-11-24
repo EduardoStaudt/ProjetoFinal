@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ lftp -u ftp.professores -e "set ftp:ssl-force true; set ssl:verify-certificate no; cd arqui
+vos; ls; bye" localhost
+Password:
+cd ok, cwd=/arquivos
+-rw-r--r--    1 1026     1026            6 Nov 24 11:09 boletim.txt
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

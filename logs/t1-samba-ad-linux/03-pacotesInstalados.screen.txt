@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ samba --version; dpkg -l samba winbind krb5-user chrony smbclient acl | grep ^ii | cut -c1-
+70
+Version 4.19.5-Ubuntu
+ii  acl            2.3.2-1build1.1          amd64        access contro
+ii  chrony         4.5-1ubuntu4.2           amd64        Versatile imp
+ii  krb5-user      1.20.1-6ubuntu2.10       amd64        basic program
+ii  samba          2:4.19.5+dfsg-4ubuntu9.8 amd64        SMB/CIFS file
+ii  smbclient      2:4.19.5+dfsg-4ubuntu9.8 amd64        command-line
+ii  winbind        2:4.19.5+dfsg-4ubuntu9.8 amd64        service to re
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

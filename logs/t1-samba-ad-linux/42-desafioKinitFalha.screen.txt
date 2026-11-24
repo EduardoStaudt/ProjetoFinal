@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ kdestroy; kinit administrator < /dev/null; host -t SRV _ldap._tcp.sabermais.lan
+kinit: Cannot find KDC for realm "SABERMAIS.LAN" while getting initial credentials
+Host _ldap._tcp.sabermais.lan not found: 3(NXDOMAIN)
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

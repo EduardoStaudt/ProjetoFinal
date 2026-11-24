@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo samba-tool user list | sort; for g in Professores Secretaria Direcao; do echo "== $g:
+$(sudo samba-tool group listmembers $g | xargs)"; done
+Administrator
+ana.souza
+beatriz.rocha
+carlos.lima
+diego.alves
+eduardo.admin
+fernanda.costa
+Guest
+krbtgt
+marcos.pereira
+== Professores: carlos.lima ana.souza
+== Secretaria: diego.alves beatriz.rocha
+== Direcao: marcos.pereira fernanda.costa
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

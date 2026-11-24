@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ grep -E "^(passwd|group)" /etc/nsswitch.conf; wbinfo -u | sort | paste -sd" "; wbinfo -g |
+grep -iE "prof|secr|dire|domain (admins|users)"; getent group "SABERMAIS\professores"; id "SABERMAIS\ana.souza"
+passwd:         files systemd winbind
+group:         files systemd winbind
+SABERMAIS\administrator SABERMAIS\ana.souza SABERMAIS\beatriz.rocha SABERMAIS\carlos.lima SABERMAIS\diego.alves SABE
+RMAIS\eduardo.admin SABERMAIS\fernanda.costa SABERMAIS\guest SABERMAIS\krbtgt SABERMAIS\marcos.pereira
+SABERMAIS\domain admins
+SABERMAIS\domain users
+SABERMAIS\professores
+SABERMAIS\secretaria
+SABERMAIS\direcao
+SABERMAIS\professores:x:3000014:
+uid=3000015(SABERMAIS\ana.souza) gid=100(users) groups=100(users),3000015(SABERMAIS\ana.souza),3000014(SABERMAIS\pro
+fessores),3000009(BUILTIN\users)
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo grep -h "Auth: \[Kerberos KDC" /var/log/samba/log.samba | grep "192.168.106.50" | grep
+ -E "ana.souza|eduardo.admin" | awk '{match($0,/(ana\.souza|eduardo\.admin)/,u); match($0,/[0-9:]{8}\./,t); match($0
+,/status \[[A-Z_]+\]/,s); print substr(t[0],1,8), u[0], s[0], "host 192.168.106.50"}' | tail -8
+19:01:34 ana.souza status [NT_STATUS_WRONG_PASSWORD] host 192.168.106.50
+19:01:49 ana.souza status [NT_STATUS_WRONG_PASSWORD] host 192.168.106.50
+19:03:08 eduardo.admin status [NT_STATUS_OK] host 192.168.106.50
+19:03:08 eduardo.admin status [NT_STATUS_OK] host 192.168.106.50
+19:06:49 ana.souza status [NT_STATUS_OK] host 192.168.106.50
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

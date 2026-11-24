@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ sudo cp /root/resolv.ok /etc/resolv.conf; cat /etc/resolv.conf; host -t SRV _ldap._tcp.sabe
+rmais.lan; klist
+nameserver 127.0.0.1
+search sabermais.lan
+_ldap._tcp.sabermais.lan has SRV record 0 100 389 lnx06-eduardo.sabermais.lan.
+Ticket cache: FILE:/tmp/krb5cc_1000
+Default principal: administrator@SABERMAIS.LAN
+
+Valid starting       Expires              Service principal
+12/11/2026 23:15:26  13/11/2026 09:15:26  krbtgt/SABERMAIS.LAN@SABERMAIS.LAN
+        renew until 13/11/2026 23:15:26
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

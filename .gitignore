@@ -1,0 +1,12 @@
+# material do professor com dados de outros alunos (planilha e enunciado)
+docs/context/
+
+# arquivos temporários
+__pycache__/
+*.pyc
+~$*
+.DS_Store
+Thumbs.db
+
+# pacote final gerado
+prints-TF-SO.zip

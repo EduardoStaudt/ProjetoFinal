@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ KRB5CCNAME=/tmp/krb5cc_bea smbclient //lnx06-eduardo.sabermais.lan/Publica --use-kerberos=r
+equired -c 'ls' < /dev/null 2>&1
+Password for [beatriz.rocha@SABERMAIS.LAN]:  .                                   D        0  Thu Nov 12 18:00:36 202
+6
+  ..                                  D        0  Thu Nov 12 18:00:36 2026
+
+                11758760 blocks of size 1024. 4486416 blocks available
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

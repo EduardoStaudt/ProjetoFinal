@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ klist -c /tmp/krb5cc_t4; KRB5CCNAME=/tmp/krb5cc_t4 smbclient //lnx06-eduardo.sabermais.lan/
+Publica --use-kerberos=required -c ls 2>&1 | tail -6
+Ticket cache: FILE:/tmp/krb5cc_t4
+Default principal: eduardo.admin@SABERMAIS.LAN
+
+Valid starting       Expires              Service principal
+23/11/2026 17:27:07  24/11/2026 03:27:07  krbtgt/SABERMAIS.LAN@SABERMAIS.LAN
+        renew until 24/11/2026 17:27:07
+Password for [eduardo.admin@SABERMAIS.LAN]:
+  .                                   D        0  Thu Nov 12 18:00:36 2026
+  ..                                  D        0  Thu Nov 12 18:00:36 2026
+
+                11758760 blocks of size 1024. 4463188 blocks available
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

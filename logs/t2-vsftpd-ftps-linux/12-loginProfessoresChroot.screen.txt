@@ -1,0 +1,35 @@
+eduardo@lnx06-eduardo:~$ lftp -u ftp.professores -e "set ftp:ssl-force true; set ssl:verify-certificate no; put /etc
+/hostname -o teste.txt; ls; cd ..; quote PWD; cd /etc; bye" localhost
+Password:
+14 bytes transferred
+drwxr-xr-x    2 1026     1026         4096 Nov 23 17:15 arquivos
+-rw-r--r--    1 1026     1026           14 Nov 23 18:33 teste.txt
+257 "/" is the current directory
+cd: Access failed: 550 Failed to change directory. (/etc)
+eduardo@lnx06-eduardo:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
